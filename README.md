@@ -11,6 +11,8 @@ Ce projet est une application Spring MVC conçue pour gérer les rendez-vous (`R
 - **JPA (Java Persistence API)** : Pour gérer les données relationnelles dans les applications Java.
 - **MySQL** : Base de données relationnelle utilisée pour le stockage des données.
 - **Lombok** : Pour réduire le code boilerplate en générant automatiquement les getters, setters et autres méthodes communes.
+- **DTO (Data Transfer Object)** : Pour transférer les données entre le client et le serveur de manière sécurisée et efficace.
+- **Keycloak** : Pour sécuriser les points de terminaison de l'API et gérer les rôles des utilisateurs.
 - **Postman** : Pour tester les points de terminaison de l'API.
 
 ## Entités
@@ -56,6 +58,7 @@ L'application fournit les points de terminaison RESTful suivants :
 - `GET /api/rendezvous/{id}` : Récupérer un rendez-vous par ID.
 - `PUT /api/rendezvous/{id}` : Mettre à jour les détails d'un rendez-vous.
 - `DELETE /api/rendezvous/{id}` : Supprimer un rendez-vous par ID.
+- **Nouveau** `PUT /api/rendezvous/update/{id}` : Mettre à jour spécifiquement un rendez-vous par ID.
 
 ## Exemples de Requêtes JSON
 
@@ -75,6 +78,3 @@ L'application fournit les points de terminaison RESTful suivants :
     "description": "Rendez-vous de suivi",
     "personId": 1
 }
-
-
-
