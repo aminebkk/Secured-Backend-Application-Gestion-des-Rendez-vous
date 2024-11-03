@@ -1,4 +1,4 @@
-# Application de Gestion des Rendez-vous
+# Application de Gestion des Rendez-vous Sécurisé
 
 ## Aperçu du Projet
 
