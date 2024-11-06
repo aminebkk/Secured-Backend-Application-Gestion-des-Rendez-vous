@@ -1,10 +1,15 @@
 package com.example.backend_spring_tp34.DTO;
 
 import com.example.backend_spring_tp34.Entities.Personne;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+
+import java.util.Date;
 
 public class RendezVousRequest {
 
-    private String date;
+    @Temporal(TemporalType.DATE)
+    private Date date;
     private String location;
     private int duration;
     private String description;
@@ -25,7 +30,7 @@ public class RendezVousRequest {
         return location;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -53,7 +58,7 @@ public class RendezVousRequest {
         this.description = description;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
