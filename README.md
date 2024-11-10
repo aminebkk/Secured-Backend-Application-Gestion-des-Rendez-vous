@@ -61,7 +61,7 @@ L'application fournit les points de terminaison RESTful suivants :
 
 ## Exemples de Requêtes JSON
 
-### Création d'une Personne et d'un rendezvous
+### Création d'une Personne 
 
 ```json
 {
@@ -70,6 +70,7 @@ L'application fournit les points de terminaison RESTful suivants :
     "email": "amine.bk2001@gmail.com",
     "phone": "0773843388"
 }
+### Création d'un rendezvous
 {
     "date": "2024-11-10",
     "location": "Oujda Hay zitoune",
